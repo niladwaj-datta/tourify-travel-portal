@@ -3,8 +3,8 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Roamwise — Go farther. Spend wiser.',
-  description: 'Compare travel routes, live fares, and budget-aware stays across India.',
+title: 'Tourify — Go farther. Spend wiser.',
+description: 'Compare travel routes, live fares, and budget-aware stays across India with Tourify.',
   generator: 'v0.app',
 }
 

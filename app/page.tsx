@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { ChatWidget } from '@/components/chat-widget'
 import {
   ArrowRight,
   BedDouble,
@@ -42,9 +43,9 @@ export default function Home() {
     <main className="min-h-screen bg-background text-foreground">
       <header className="border-b border-border/70 bg-background/90 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 lg:px-8">
-          <a href="#top" className="flex items-center gap-3" aria-label="Roamwise home">
+          <a href="#top" className="flex items-center gap-3" aria-label="Tourify home">
             <span className="flex size-10 items-center justify-center rounded-2xl bg-primary text-primary-foreground"><Plane className="size-5 -rotate-12" /></span>
-            <span className="font-sans text-lg font-semibold tracking-tight">roamwise</span>
+            <span className="font-sans text-lg font-semibold tracking-tight">Tourify</span>
           </a>
           <nav className="hidden items-center gap-8 text-sm text-muted-foreground md:flex" aria-label="Primary navigation">
             <a href="#how-it-works" className="transition-colors hover:text-foreground">How it works</a>
@@ -80,7 +81,8 @@ export default function Home() {
 
       <section id="stays" className="mx-auto max-w-7xl px-5 py-20 lg:px-8"><div className="grid gap-8 rounded-[2rem] bg-primary px-7 py-10 text-primary-foreground sm:p-12 lg:grid-cols-[1fr_auto] lg:items-center"><div><p className="text-sm font-semibold uppercase tracking-[0.18em] text-primary-foreground/65">A better place to land</p><h2 className="mt-3 max-w-xl text-3xl font-semibold tracking-tight sm:text-4xl">Tell us your budget. We&apos;ll show you where to stay.</h2><p className="mt-4 max-w-lg leading-7 text-primary-foreground/75">We&apos;re building live stay discovery across hotels, homestays and vacation rentals, with the details you need to book confidently.</p></div><a href="#search" className="inline-flex items-center justify-center gap-2 rounded-xl bg-background px-5 py-3 text-sm font-semibold text-foreground">Plan a stay <ArrowRight className="size-4" /></a></div></section>
 
-      <footer className="border-t border-border"><div className="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-8 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between lg:px-8"><p>© 2026 roamwise. Compare with confidence.</p><p className="flex items-center gap-2"><CloudSun className="size-4" /> India-first travel planning</p></div></footer>
+      <footer className="border-t border-border"><div className="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-8 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between lg:px-8"><p>© 2026 Tourify. Plan with confidence.</p><p className="flex items-center gap-2"><CloudSun className="size-4" /> India-first travel planning</p></div></footer>
+      <ChatWidget />
     </main>
   )
 }
